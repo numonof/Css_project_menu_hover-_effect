@@ -1,0 +1,129 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0;
+    
+}
+header{
+    width: 100%;
+    height: 100%;
+    background-color: #262626;
+}
+.navbar{
+ display: flex;
+ width: 100%;
+ padding: 25px 0;
+ align-items: center;
+ justify-content: space-between;
+    
+}
+.logo{
+    font-size:28px;
+    font-weight:500;
+    letter-spacing:1.5px;
+    text-decoration:none;
+    text-transform:capitalize;
+    color:#fff;
+    padding-left:5px;
+}
+.nav-list{
+    margin: 0;
+    padding: 0;
+    display: flex;    
+}
+.nav-item{
+    list-style: none;
+    padding: 10px 40px;
+}
+.nav-list .nav-item .nav-link{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1.5rem;
+    position: relative;
+    padding: 5px;
+} 
+.nav-list .nav-item .nav-link:hover{
+    color: #ff0;
+}
+.nav-list .nav-item .nav-link span:first-child::before{
+content: "";
+top: 0;
+left: 0;
+position: absolute;
+width: 8px;
+height: 8px;
+background: transparent;
+border-top: 2px solid#ff0;
+border-left: 2px solid#ff0;
+transition: 0.2s;
+opacity: 0;
+}
+.nav-list .nav-item .nav-link span:first-child::after{
+content: "";
+top: 0;
+right: 0;
+position: absolute;
+width: 8px;
+height: 8px;
+background: transparent;
+border-top: 2px solid#ff0;
+border-right: 2px solid#ff0;
+opacity: 0;
+transition: 0.2s;
+}
+.nav-list .nav-item .nav-link span:last-child::before{
+content: "";
+bottom:0;
+left: 0;
+position: absolute;
+width: 8px;
+height: 8px;
+background: transparent;
+border-bottom: 2px solid#ff0;
+border-left: 2px solid#ff0;
+opacity: 0;
+transition: 0.2s;
+}
+.nav-list .nav-item .nav-link span:last-child::after{
+content: "";
+bottom: 0;
+right: 0;
+position: absolute;
+width: 8px;
+height: 8px;
+background: transparent;
+border-bottom: 2px solid#ff0;
+border-right: 2px solid#ff0;
+opacity: 0;
+transition: 0.2s;
+}
+.nav-list .nav-item .nav-link:hover span:first-child::before{
+top: -10px;
+left: -10px;
+opacity: 1;
+}
+.nav-list .nav-item .nav-link:hover span:last-child::before{
+bottom: -10px;
+left: -10px;
+opacity: 1;
+}
+.nav-list .nav-item .nav-link:hover span:first-child::after{
+top: -10px;
+right: -10px;
+opacity: 1;
+}
+.nav-list .nav-item .nav-link:hover span:last-child::after{
+bottom: -10px;
+right: -10px;
+opacity: 1;
+}
+
